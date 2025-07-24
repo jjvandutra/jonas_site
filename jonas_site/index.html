@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VANDUTRA ENGINEERING TECHNOLOGY</title>
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Solar powered products, smart automation & maintenance services for homes, offices, and industries. Trusted in Nigeria for over 10 years." />
+  <meta name="keywords" content="solar inverters and related products, CCTV, DSTV, Starlink, Ceiling speakers, intercom, projector, cinema, electric fence, home repairs, smart home automation" />
+  <meta name="author" content="Vandutra Engineering Technology" />
+  <link rel="canonical" href="https://vandutraengineering.com/" />
+  <meta property="og:title" content="Vandutra Engineering Technology" />
+  <meta property="og:description" content="Reliable solar, automation and tech repair services." />
+  <meta property="og:url" content="https://vandutraengineering.com/" />
+  <meta property="og:image" content="https://vandutraengineering.com/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vandutra Engineering Technology" />
+  <meta name="twitter:description" content="Expert engineering solutions you can trust." />
+  <meta name="twitter:image" content="https://vandutraengineering.com/og-image.jpg" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f8fb;
+      color: #102040;
+    }
+    .header-modern {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 24px 24px 24px;
+      gap: 36px;
+      min-height: 180px;
+    }
+    .logo-block {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: none;
+      border-radius: 0;
+      box-shadow: none;
+      padding: 0;
+      min-width: 0;
+      min-height: 0;
+    }
+    .main-logo {
+      display: block;
+      max-width: 320px;
+      max-height: 180px;
+      width: 320px;
+      height: 180px;
+      object-fit: contain;
+      filter: none;
+      margin-right: 0;
+    }
+    .sliding-text {
+      flex: 1 1 0%;
+      position: relative;
+      z-index: 2;
+      min-height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-size: 2.3em;
+      font-weight: 900;
+      color: #102040;
+      text-align: left;
+      letter-spacing: 2px;
+      text-shadow: 0 6px 32px #16335a33, 0 1px 0 #fff, 0 0 2px #16335a;
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background: none;
+      border-radius: 0 0 32px 32px;
+      margin: 0;
+      overflow: hidden;
+    }
+    .slide-item {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 0.7s;
+      white-space: normal;
+      text-overflow: initial;
+      overflow: hidden;
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 1.1em;
+      color: #0a1a2f;
+      letter-spacing: 1.5px;
+      text-shadow: 0 2px 12px #16335a22, 0 1px 0 #fff;
+      line-height: 1.2;
+    }
+    .slide-item.active {
+      opacity: 1;
+      position: relative;
+      animation: slidein 1.2s cubic-bezier(.77,0,.18,1);
+    }
+    @keyframes slidein {
+      from { opacity: 0; transform: translateY(40px) scale(0.98); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    header {
+      text-align: center;
+      padding: 20px 10px;
+    }
+    nav {
+      background: #16335a;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    }
+    h1, h2, h3 {
+      color: #102040;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    .service {
+      transition: transform 0.3s ease;
+      margin-bottom: 20px;
+    }
+    .service:hover {
+      transform: scale(1.03);
+    }
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0 20px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+    form input[type="submit"] {
+      background: #16335a;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 12px;
+    }
+    form input[type="submit"]:hover {
+      background: #102040;
+    }
+    footer {
+      background: #16335a;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    a[href="#request"] {
+      animation: pulse 2.5s ease-in-out infinite;
+    }
+    @media screen and (max-width: 900px) {
+      .header-modern {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        padding: 18px 6vw 12px 6vw;
+      }
+      .main-logo {
+        max-width: 180px;
+        max-height: 90px;
+        width: 180px;
+        height: 90px;
+      }
+      .sliding-text, .sliding-text.epic {
+        font-size: 1.2em;
+        min-height: 40px;
+        border-radius: 0 0 18px 18px;
+        text-align: center;
+        justify-content: center;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      .container {
+        width: 95%;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+      header p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-modern">
+      <div class="logo-block">
+        <img src="Sitepng.png" alt="Vandutra Engineering Technology Logo" class="main-logo">
+      </div>
+      <div class="sliding-text epic">
+        <span class="slide-item" style="display:block; text-align:center; line-height:1.05; font-size:2em; font-weight:900; letter-spacing:2.5px; color:#0a1a2f; text-shadow:0 4px 24px #16335a22, 0 1px 0 #fff; text-transform:uppercase;">
+          Vandutra Engineering<br>
+          <span style="font-size:0.6em; display:block; margin-top:2px; font-weight:900; letter-spacing:1.5px; text-transform:uppercase;">Technology</span>
+        </span>
+        <span class="slide-item tagline">Smart. Secure. Sustainable.</span>
+        <span class="slide-item" style="display:block; text-align:left; white-space:normal; line-height:1.2;">
+          Your trusted partner for clean, renewable energy<br>
+          and smart automation solutions
+        </span>
+      </div>
+    </div>
+  </header>
+  <script>
+    (function() {
+      var slides = document.querySelectorAll('.slide-item');
+      var idx = 0;
+      function showSlide(i) {
+        slides.forEach(function(slide, j) {
+          slide.classList.toggle('active', j === i);
+        });
+      }
+      function nextSlide() {
+        idx = (idx + 1) % slides.length;
+        showSlide(idx);
+      }
+      if (slides.length) {
+        showSlide(0);
+        setInterval(nextSlide, 3000);
+      }
+    })();
+  </script>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#request">Request Quote</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="container">
+    <section id="about">
+      <h2>About Us</h2>
+      <p>With over a decade of excellence, Vandutra Engineering Technology has emerged as a trusted leader in clean energy, smart automation, and advanced connectivity solutions. From private residences and corporate offices to large-scale industrial facilities—offshore and ashore—we proudly deliver innovative technology wherever it's needed, both locally and across international borders.</p>
+      <p>Rooted in professionalism and driven by purpose, our team combines deep technical expertise with a commitment to reliability and care. Whether installing solar infrastructure in urban communities or securing industrial assets in remote locations, Vandutra brings smart solutions that power lives and protect investments.</p>
+      <p>We don't just engineer technology—we engineer peace of mind.</p>
+    </section>
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="service">
+        <h3>🔆 Solar Power & CCTV Security Solutions – Sales, Installation, Maintenance</h3>
+        <p>Vandutra Engineering delivers expert sales, installation, and long-term support for advanced energy and security systems. We specialize in solar panels, inverters, street lights, and CCTV setups—empowering homes and businesses with reliable, eco-friendly solutions. Our team ensures every product is installed to perfection and maintained for lasting performance. Whether you're switching to solar or upgrading your security, we're your trusted partner for sustainable innovation.</p>
+      </div>
+      <div class="service">
+        <h3>🏠 Smarter Living Starts Here</h3>
+        <p>Vandutra Engineering transforms homes with cutting-edge automation—from smart locks and cinema setups to projectors and lighting control. Enjoy convenience, security and digitalization with artificial intelligence all seamlessly integrated for modern living.</p>
+      </div>
+      <div class="service">
+        <h3>📡 Connectivity & Entertainment, Seamlessly Delivered</h3>
+        <p>From DSTV and Starlink to intercom systems and ceiling speakers, Vandutra Engineering connects you to smarter entertainment and communication. We handle sales, installation, and integration—bringing high-tech convenience to your home or office.</p>
+      </div>
+      <div class="service">
+        <h3>🔧 Smart Repairs & Reliable Maintenance</h3>
+        <p>We provide swift, professional repairs for smart TVs, sound systems, and home appliances with service guarantees and optional home pickup. We fix it right so you can get back to enjoying what matters.</p>
+      </div>
+    </section>
+    <section id="request">
+      <h2>Request Service / Quotation</h2>
+      <form action="mailto:yourcompany@email.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required>
+        <label for="mobile">Mobile Number:</label><br>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9+\\-() ]{7,}" required>
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address" required>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+        <label for="service">Service:</label><br>
+        <select id="service" name="service">
+          <option value="Solar">Solar Installation</option>
+          <option value="CCTV">CCTV & Security</option>
+          <option value="Internet">Starlink/DSTV</option>
+          <option value="Repairs">Repairs</option>
+          <option value="Other">Other</option>
+        </select>
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <input type="submit" value="Send Request">
+      </form>
+    </section>
+    <section id="gallery">
+      <h2>Project Gallery</h2>
+      <div style="display:flex; flex-wrap:wrap; gap:20px;">
+        <figure style="margin:0; width:60%;">
+          <a href="OIP (1).webp" target="_blank">
+            <img src="OIP (1).webp" alt="Project OIP" style="width:100%; border-radius:12px; box-shadow:0 2px 4px rgba(0,0,0,0.1); transition:box-shadow 0.2s;" />
+          </a>
+          <figcaption style="text-align:center; margin-top:8px; color:#16335a; font-size:1em;">
+            Solar & Security Project (Sample Caption)
+          </figcaption>
+        </figure>
+        <!-- Add more images as needed using the same <figure> structure -->
+      </div>
+    </section>
+    <section id="industry-trends">
+      <h2 style="color:#16335a; font-family:'Georgia','Times New Roman',serif; font-weight:900; letter-spacing:1.5px;">Industry Trends – Curated for Vandutra Engineering Technology</h2>
+      <div style="margin:30px 0; background:#f4f8fb; border:2px solid #16335a; border-radius:12px; box-shadow:0 2px 8px #16335a11; padding:18px;">
+        <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="YOUR_WIDGET_ID"></script>
+        <noscript>
+          <a href="https://feed.mikle.com/" rel="noopener" target="_blank">View Industry Trends</a>
+        </noscript>
+      </div>
+      <div style="font-size:0.95em; color:#555; margin-top:10px; text-align:center;">
+        <em>Content provided for informational purposes only. Vandutra Engineering Technology is not responsible for external news content.</em>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email us at: <a href="mailto:info@vandengineering.com" style="color:#16335a;">info@vandengineering.com</a></p>
+      <p><strong>Address:</strong> <a href="https://www.google.com/maps/dir/?api=1&destination=9+Osagie+Unuigbe+Close,+Igbo-Efon,+Lekki,+Lagos" target="_blank" style="color:#16335a; text-decoration:underline;">9 Osagie Unuigbe Close, Igbo-Efon, Lekki, Lagos</a></p>
+      <p><strong>Phone:</strong> <a href="https://wa.me/2349025425937" style="color:#16335a; text-decoration:underline;" target="_blank">+2349025425937 (WhatsApp)</a> or <a href="tel:+2347039638264" style="color:#16335a; text-decoration:underline;">+2347039638264</a></p>
+    </section>
+  </div>
+  <footer>
+    &copy; 2025 VANDUTRA ENGINEERING TECHNOLOGY. All rights reserved.
+  </footer>
+  <a href="https://wa.me/2349025425937"
+     style="position:fixed; bottom:20px; right:20px; background:#25d366; color:#fff; padding:15px 20px; border-radius:50px; text-decoration:none; font-weight:bold; box-shadow:0 2px 6px rgba(0,0,0,0.3); z-index:1000;">
+    Chat with us on WhatsApp
+  </a>
+  <a href="#" id="mapBtn" title="View Location on Map"
+     style="position:fixed; bottom:20px; left:20px; background:#fff; color:#16335a; padding:13px 18px; border-radius:50px; text-decoration:none; font-weight:bold; box-shadow:0 2px 6px rgba(0,0,0,0.2); z-index:1000; display:flex; align-items:center; gap:8px; border:2px solid #16335a;">
+    <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24" style="vertical-align:middle;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+    View Map / Directions
+  </a>
+  <div id="mapModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.45); z-index:2000; align-items:center; justify-content:center;">
+    <div style="background:#fff; border-radius:10px; max-width:90vw; max-height:80vh; overflow:hidden; position:relative; box-shadow:0 4px 24px rgba(0,0,0,0.18);">
+      <button id="closeMapModal" style="position:absolute; top:10px; right:10px; background:#16335a; color:#fff; border:none; border-radius:50%; width:32px; height:32px; font-size:1.2em; cursor:pointer;">&times;</button>
+      <iframe src="https://www.google.com/maps?output=embed&daddr=9+Osagie+Unuigbe+Close,+Igbo-Efon,+Lekki,+Lagos" width="600" height="400" style="border:0; display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <script>
+    document.getElementById('mapBtn').onclick = function(e) {
+      e.preventDefault();
+      var directionsUrl = 'https://www.google.com/maps/dir/?api=1&destination=9+Osagie+Unuigbe+Close,+Igbo-Efon,+Lekki,+Lagos';
+      if (window.innerWidth < 700) {
+        window.open(directionsUrl, '_blank');
+      } else {
+        document.getElementById('mapModal').style.display = 'flex';
+      }
+    };
+    document.getElementById('closeMapModal').onclick = function() {
+      document.getElementById('mapModal').style.display = 'none';
+    };
+    document.getElementById('mapModal').onclick = function(e) {
+      if (e.target === this) this.style.display = 'none';
+    };
+  </script>
+</body>
+</html>
+<!-- Netlify rebuild trigger: updated by Jonathan on 2025-07-24 -->git status
+  </body>
+</html>
